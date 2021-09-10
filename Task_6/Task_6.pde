@@ -13,14 +13,14 @@ void setup() {
   int z = 12;
   if (x + y + z == 30){
     if(x % 10 == 0 || y % 10 == 0 || z % 10 == 0){
-      println("Big FAILUREEE!");
+      println("Failure");
     }
     else{ 
-      println("OMEGA SUCCESS!");
+      println("SUCCESS!");
     }   
   }
   else{
-    println("U lose:(!");
+    println("Failure!");
   }
   
 }
