@@ -1,17 +1,15 @@
 public class Student{
   String name;
   int age;
-  Boolean femalexd;
+  Boolean isFemale;
   String team;
-  int StudentID
+  int studentID;
 
-public Student(String tmpName,int tmpAge,Boolean tmpFemalexd,String tmpTeam, int tmpID){
-name = tmpName;
-age = tmpAge;
-femalexd = tmpFemalexd;
-team = tmpTeam;
-StudentID = tmpID;
-
-
-}
+  public Student(String tmpName, int tmpAge, Boolean tmpIsFemale, String tmpTeam,int tmpStudentID){
+    name = tmpName;
+    age = tmpAge;
+    isFemale = tmpIsFemale;
+    team = tmpTeam;
+    studentID = tmpStudentID;
+  }
 }
