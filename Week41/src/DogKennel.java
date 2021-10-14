@@ -1,18 +1,25 @@
-public class DogKennel {
+import java.util.ArrayList;
+
+class DogKennel {
     public static void main(String[] args) {
         //TODO:
         // lav en ny hund
-        Dog myDog = new Dog("woodie", true);
+        Dog myDog = new Dog("Woof", true);
+        // Dog myDog = new Dog("woodie",);
         // sæt en ejer
         myDog.setOwner("Henning");
         // TODO: tilføj to hvalpe når hundeklassen er klar til hvalpe
         myDog.setOffSpring("woodiesnoopie");
         myDog.setOffSpring("woodiesfido");
+        myDog.setOffSpring("Woofie");
+        myDog.setOffSpring("Woofono");
+
 
         // print alle hvalpe
-        String myOff = myDog.getOffSpring();
-            System.out.println(myOff);
-
+        ArrayList<String> dogs = myDog.getOffSpring();
+        for (String myDogs : dogs) {
+            System.out.println(myDog);
+        }
 
         // print ejeren
         System.out.println("min hund er ejet af " + myDog.getOwner());

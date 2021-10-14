@@ -1,36 +1,36 @@
+import java.util.ArrayList;
+
 public class Dog {
+    private Owner owner;
+    private final String name;
+    private final boolean isHungry;
+    ArrayList<String> offSpring = new ArrayList<>();
 
-    String name;
-    boolean isHungry;
-    private String OffSpring;
-    private String owner;
-
-    public Dog(String _name, boolean _isHungry) {
-        this.name = _name;
-        this.isHungry = _isHungry;
+    public Dog(String name, boolean isHungry) {
+        this.name = name;
+        this.isHungry = isHungry;
     }
 
-    public boolean feedDog() {
-        if (isHungry == true) {
-            isHungry = false;
-            System.out.println("The Dog is not hungry");
+    boolean feedDog(){
+        if (isHungry == true){
         }
         return false;
     }
 
-    public String getOffSpring() {
-        return OffSpring;
+    void setOwner(String Owner) {
     }
 
-    public void setOffSpring(String _OffSpringName) {
-        this.OffSpring = _OffSpringName;
+
+    public ArrayList<String> getOffSpring() {
+        return offSpring;
     }
 
-    public String getOwner() {
+
+    public Owner getOwner() {
         return owner;
     }
 
-    public void setOwner(String owner) {
-        this.owner = owner;
+    public void setOffSpring(String Mydog) {
+        offSpring.add(Mydog);
     }
 }
